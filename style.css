@@ -182,7 +182,7 @@ header nav li a{
 .features__wrapper{
     padding: 66px 0px;
     background: url("img/features-background.png");
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 }

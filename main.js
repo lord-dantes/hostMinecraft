@@ -104,11 +104,11 @@ rangeSSD.noUiSlider.on('change', function () { // on change range SSD
         rangeRamSet('15.1');
         rangeRAMresult.textContent = rangeRAM.noUiSlider.get();
     }
-    function rangeRamSet(count){
+    function rangeRamSet(count) {
         rangeRAM.noUiSlider.set(count);
     }
 });
-rangeRAM.noUiSlider.on('change', function () { // on change rangeRAM
+rangeRAM.noUiSlider.on('update', function () { // on change rangeRAM
 
     actualRAMRangeTest = Number(rangeRAM.noUiSlider.get()); // give and transform rangeRAM value
     actualSSDRangeTest = Number(rangeSSD.noUiSlider.get()); // give and transform rangeSSD value
