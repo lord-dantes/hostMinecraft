@@ -23,6 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
@@ -46,7 +47,7 @@
       <workItem from="1599377291718" duration="23343000" />
       <workItem from="1599408882659" duration="9338000" />
       <workItem from="1599457214041" duration="9816000" />
-      <workItem from="1599469448711" duration="8268000" />
+      <workItem from="1599469448711" duration="8482000" />
     </task>
     <servers />
   </component>

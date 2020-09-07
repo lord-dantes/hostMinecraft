@@ -6,8 +6,8 @@
 		echo "Заполните все поля";
     }
 	else{
-		$sb = 'slava.bandura1@gmail.com';
-		$to = $sb;
+		$it = 'it737@yandex.ru';
+        $to = $it;
 
 		$subject = "[Minecraft Hosting] " . $email;
 		$headers = "MIME-Version: 1.0\r\n";
