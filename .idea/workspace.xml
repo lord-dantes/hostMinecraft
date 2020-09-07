@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc3b7f99-bd6d-4264-b84e-46d33af6f15c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h24fNeMAnzffwkJgXi1oJK2XXB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programs\OSPanel\domains\landing-minecraft\img" />
+      <recent name="D:\Programs\OSPanel\domains\landing-minecraft" />
+      <recent name="D:\Projects\landing-minecraft\img" />
+      <recent name="D:\Projects\landing-minecraft\fonts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc3b7f99-bd6d-4264-b84e-46d33af6f15c" name="Default Changelist" comment="" />
+      <created>1599195955715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599195955715</updated>
+      <workItem from="1599195956726" duration="8592000" />
+      <workItem from="1599220544299" duration="8958000" />
+      <workItem from="1599377291718" duration="23343000" />
+      <workItem from="1599408882659" duration="9338000" />
+      <workItem from="1599457214041" duration="9816000" />
+      <workItem from="1599469448711" duration="8268000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="714" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599221380046">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="714" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1599221380046" />
+    <state x="616" y="260" key="run.anything.popup" timestamp="1599388585160">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1599388585160" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1599471415322">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1599471415322" />
+  </component>
+</project>
