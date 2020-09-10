@@ -21,9 +21,11 @@
             <section class="home__wrapper">
                 <div class="container">
                     <header>
-                        <a href="#"><img src="img/logo.png" alt="logo"></a>
+                        <a href="#">
+                            Global Host
+                        </a>
                         <nav>
-                            <li><a href="#">Тарифы</a></li>
+                            <li><a id="plan-href" href="#plan">Тарифы</a></li>
                             <li><a href="#" onclick="addStyle('support-modal')">Support</a></li>
                             <li><a href="#">Panel</a></li>
                             <li><a href="#">Billing</a></li>
@@ -38,7 +40,7 @@
                 </div>
             </section>
             <section class="img__wrapper">
-                <img src="img/img-minecraft.png" alt="">
+                <img src="img/img-minecraft.svg" alt="">
             </section>
             <section class="video__wrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KQGXcMpAx4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -49,26 +51,26 @@
                     <h2 class="features-title">Преимущества Global Host</h2>
                     <div class="features-items">
                         <div class="features-item">
-                            <img src="img/features-item1.png" alt="">
+                            <img src="img/features-item1.svg" alt="">
                             <p>Поддержка (с пн. по пт.)</p>
                         </div>
                         <div class="features-item">
-                            <img src="img/features-item2.png" alt="">
+                            <img src="img/features-item2.svg" alt="">
                             <p>Полный SFTP-доступ</p>
                         </div>
                         <div class="features-item">
-                            <img src="img/features-item3.png" alt="">
+                            <img src="img/features-item3.svg" alt="">
                             <p>SSD-диски</p>
                         </div>
                         <div class="features-item">
-                            <img src="img/features-item4.png" alt="">
+                            <img src="img/features-item4.svg" alt="">
                             <p>Подержка BungeeCord</p>
                         </div>
                     </div>
                     <p class="features-info">Еще бесконечное количество слотов, бесплатный MySQL, а также бесплатный тариф <br> Basic, на котором вы сможете протестировать работу нашего хостинга. </p>
                 </div>
             </section>
-            <section class="plan__wrapper">
+            <section id="plan" class="plan__wrapper">
                 <div class="container">
                     <div class="plan-title">Выберите тариф</div>
                     <div class="plan__box">
@@ -254,7 +256,7 @@
                     <p>Если нужна помощь для оплаты и регистрации, позвоните нам по бесплатному номеру <span>8(800)234-15-02</span> или оставьте ваш номер и мы перезвоним.</p>
                     <div class="config-modal__box">
                         <img src="img/phone.svg" alt="">
-                        <input type="text" id="config-number">
+                        <input type="number" id="config-number">
                         <input type="submit" id="config-button" value="Отправить">
                     </div>
                 </form>
@@ -277,6 +279,8 @@
         let mods = jQuery('.mods-carousel');
         mods.owlCarousel({ // init carousel
             items:3,
+            autoplay: true,
+            autoplayTimeout: 3000,
             responsive: {
                 0:{
                     items:1,
@@ -298,12 +302,28 @@
                 }
             }
         })
+    // slow-scroll
+        $("#plan-href").click(function() {
+            $('html, body').animate({
+                scrollTop: $('#plan').offset().top
+            }, 2000);
+        });
     // mask
     const element = document.getElementById('config-number');
-    const maskOptions = {
-        mask: '+{7}(000)000-00-00'
+    var inputNumber = element;
+    inputNumber.oninput = function() {
+        if (inputNumber.value.length > 12) {
+            inputNumber.value = inputNumber.value.slice(0, -1);
+            $('#config-number').css({"filter": "unset"});
+            $('.config-modal__box > img').css({"filter": "unset"});
+        } else if(inputNumber.value.length > 9){
+            $('#config-number').css({"filter": "unset"});
+            $('.config-modal__box > img').css({"filter": "unset"});
+        } else if (inputNumber.value.length < 9){
+            $('#config-number').css({"filter": "brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(1100%) contrast(1)"});
+            $('.config-modal__box > img').css({"filter": "brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(1100%) contrast(1)"});
+        }
     };
-    const mask = IMask(element, maskOptions);
     // form
     btn = jQuery('#contact-button');
     btn.click(function() {

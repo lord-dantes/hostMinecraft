@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc3b7f99-bd6d-4264-b84e-46d33af6f15c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/features-background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/features-item1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/features-item2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/features-item3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/features-item4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img-minecraft.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
@@ -43,6 +48,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1h24fNeMAnzffwkJgXi1oJK2XXB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,7 +59,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Projects/GitHub/protectfeed" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
@@ -79,7 +87,10 @@
       <workItem from="1599457214041" duration="9816000" />
       <workItem from="1599469448711" duration="8551000" />
       <workItem from="1599478236753" duration="124000" />
-      <workItem from="1599502034654" duration="8639000" />
+      <workItem from="1599502034654" duration="8683000" />
+      <workItem from="1599719906991" duration="4186000" />
+      <workItem from="1599727696346" duration="70000" />
+      <workItem from="1599731395240" duration="2829000" />
     </task>
     <servers />
   </component>
@@ -96,16 +107,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="714" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599221380046">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="714" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1599221380046" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1599388585160">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1599727763499">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1599388585160" />
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1599727763499" />
+    <state x="616" y="260" key="run.anything.popup" timestamp="1599731490507">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1599731490507" />
     <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1599471415322">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

@@ -206,6 +206,7 @@ function removeStyle(className){
         body[i].setAttribute("class", "");
         testClass[i].setAttribute("style", "display: none;");
     }
+    $('#config-number').val(' ');
 }
 // if need help for this bad script, can write me telegram - @callbackme_bot
 // good luck!
