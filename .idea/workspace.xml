@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc3b7f99-bd6d-4264-b84e-46d33af6f15c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/features-background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/features-item1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/features-item2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/features-item3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/features-item4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img-minecraft.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
       <workItem from="1599502034654" duration="8683000" />
       <workItem from="1599719906991" duration="4186000" />
       <workItem from="1599727696346" duration="70000" />
-      <workItem from="1599731395240" duration="2829000" />
+      <workItem from="1599731395240" duration="3297000" />
     </task>
     <servers />
   </component>
