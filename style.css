@@ -58,8 +58,14 @@ body{
 }
 .home-call{
     position: relative;
+    transition: all 300ms;
+}
+.home-call:hover{
+    cursor: pointer;
+    color: #35E1FF;
 }
 .home-call::before{
+    z-index: -1;
     content: 'звонки по РФ бесплатно';
     position: absolute;
     font-family: 'Roboto';
@@ -355,6 +361,19 @@ header nav li a{
     display: flex;
     margin-right: 90px;
     flex-direction: column;
+    position: relative;
+}
+.plan-item::before{
+    content: '';
+    position: absolute;
+    width: 272px;
+    height: 473px;
+    left: -40%;
+    top: -53px;
+    z-index: -1;
+}
+.plan-item:hover::before{
+    border: 1px solid #B1F3FF;
 }
 .plan-item p:first-child{
     font-style: normal;
@@ -758,6 +777,7 @@ footer{
     position: relative;
 }
 footer > p{
+    z-index: -1;
     position: absolute;
     width: 100%;
     bottom: 20px;
@@ -790,7 +810,7 @@ footer > p span{
     color: #F59D52;
     margin-bottom: 17px;
 }
-.footer-info p{
+.footer-info p, .footer-info a{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -798,12 +818,17 @@ footer > p span{
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 12px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+.footer-info a:hover{
+    color: #35E1FF;
 }
 .footer-info p:last-child{
     margin-bottom: 0px;
 }
 /*modals*/
-.support-modal, .config-modal{
+.support-modal, .config-modal, .number-modal{
     display: none;
     background: rgba(0,0,0,.5);
     position: fixed;
@@ -814,7 +839,7 @@ footer > p span{
     align-items: center;
     justify-content: center;
 }
-.support-modal form, .config-modal form{
+.support-modal form, .config-modal form, .number-modal form{
     background: #16074A;
     box-sizing: border-box;
     border-radius: 3px;
@@ -825,7 +850,7 @@ footer > p span{
     padding:40px 35px 23px;
     position: relative;
 }
-.support-modal label, .config-modal label{
+.support-modal label, .config-modal label, .number-modal label{
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans';
@@ -872,7 +897,7 @@ footer > p span{
     line-height: 22px;
     color: #373737;
 }
-.support-modal form input[type="submit"], .config-modal form input[type="submit"]{
+.support-modal form input[type="submit"], .config-modal form input[type="submit"], .number-modal form input[type="submit"]{
     background: #292539;
     border: 0.5px solid #8F8F8F;
     box-sizing: border-box;
@@ -891,10 +916,10 @@ footer > p span{
     transition: all 300ms;
     cursor: pointer;
 }
-.support-modal form input[type="submit"]:hover, .config-modal form input[type="submit"]:hover{
+.support-modal form input[type="submit"]:hover, .config-modal form input[type="submit"]:hover, .number-modal form input[type="submit"]:hover{
     background: #1B1B1B;
 }
-.support-modal img, .config-modal img{
+.support-modal img, .config-modal img, .number-modal img{
     position: absolute;
     top: 11px;
     right: 18px;
@@ -905,7 +930,7 @@ footer > p span{
     border-radius: 4px;
     transition: all 300ms;
 }
-.support-modal img:hover, .config-modal img:hover{
+.support-modal img:hover, .config-modal img:hover, .number-modal img:hover{
     border: 1px solid #C6C6C6;
 }
 .config-modal form{
@@ -915,7 +940,7 @@ footer > p span{
     height: 100%;
     max-height: 300px;
 }
-.config-modal a{
+.config-modal a, .number-modal a{
     width: 207px;
     height: 57px;
     display: flex;
@@ -1030,6 +1055,33 @@ footer > p span{
     display: none;
     position: relative;
 }
+#support-result{
+    display: none;
+    position: relative;
+}
+#support-result a{
+    width: 207px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    background: #049943;
+    border-radius: 4px;
+    margin: 0 auto 0;
+}
+#support-result a img{
+    position: static;
+    border: 0px;
+}
 #config-result a{
     margin-bottom: 0px;
 }
@@ -1042,5 +1094,123 @@ footer > p span{
     border: 1px solid #C6C6C6;
 }
 #config-result a img{
+    position: static;
+}
+.support-modal form input[type="submit"]{
+    background: #049943;
+    font-family: 'Roboto';
+    border: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #D3D2D2;
+}
+.support-modal form{
+    height: 356px;
+    background: #2A2539;
+    border-radius: 7px;
+}
+.support-modal form input[type="submit"]:hover{
+    background: #049943;
+}
+#support-key{
+    margin-top: 0px;
+    max-width: 255px;
+    height: 35px;
+    padding:6px 10px;
+    background: #D3D1D1;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #151515;
+    margin-bottom: 20px;
+}
+#support-key::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #373737;
+}
+.support-modal form textarea{
+    margin-left: 0px;
+    background: #D3D1D1;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #151515;
+}
+.support-modal form textarea::placeholder{
+    font-style: italic;
+}
+#number-form{
+    width: 246px;
+    height: 307px;
+    padding: 75px 32px 48px;
+    background: #2A2539;
+}
+#number-form input:not([type="submit"]){
+    outline: 0;
+    width: 181px;
+    height: 35px;
+    margin-bottom: 36px;
+    background: #D3D1D1;
+    border-radius: 7px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px 10px;
+    color: #151515;
+    border:0px;
+}
+#number-form #number-button{
+    background: #049943;
+    border-radius: 4px;
+    border: 0px;
+}
+.number-modal img{
+    right: 11px;
+}
+#number-result{
+    position: relative;
+    display: none;
+    width: 246px;
+    height: 248px;
+    background: #2A2539;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 0px;
+    padding-bottom: 42px;
+}
+#number-result p{
+    margin: auto 0px 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #D3D2D2;
+}
+.number-modal a{
+    width: 154px;
+    height: 43px;
+    margin: 0px auto;
+    background: #049943;
+    border-radius: 4px;
+}
+#number-result a img{
     position: static;
 }

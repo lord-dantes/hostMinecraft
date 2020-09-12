@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc3b7f99-bd6d-4264-b84e-46d33af6f15c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/number.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Projects/GitHub/protectfeed" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
@@ -82,7 +85,10 @@
       <workItem from="1599502034654" duration="8683000" />
       <workItem from="1599719906991" duration="4186000" />
       <workItem from="1599727696346" duration="70000" />
-      <workItem from="1599731395240" duration="3297000" />
+      <workItem from="1599731395240" duration="3338000" />
+      <workItem from="1599738001914" duration="288000" />
+      <workItem from="1599812797192" duration="6773000" />
+      <workItem from="1599890344012" duration="4598000" />
     </task>
     <servers />
   </component>
@@ -106,10 +112,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="714" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1599221380046" />
-    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1599727763499">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1599738289595">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1599727763499" />
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1599738289595" />
     <state x="616" y="260" key="run.anything.popup" timestamp="1599731490507">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
