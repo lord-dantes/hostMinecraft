@@ -216,7 +216,7 @@
                 <div class="contact__box">
                     <div class="contact-aside">
                         <p>5/7</p>
-                        <p>Мы работаем с понедельника по пятницу и будем рады ответить на ваши вопросы</p>
+                        <p>Мы работаем <br> с пн. по пт. <br> с 9:00 до 18.00 по <br> Мск и будем рады ответить на ваши вопросы</p>
                     </div>
                     <form id="contact-form" action="/" method="POST" onsubmit="return false;">
                         <p>Остались вопросы?</p>
@@ -255,9 +255,9 @@
                     <input id="number-button" type="submit" value="Отправить">
                 </form>
                 <div id="number-result" class="config-modal--access">
-                    <img src="img/close.svg" onclick="removeStyle('config-modal');" alt="">
+                    <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
                     <p>Мы перезвоним!</p>
-                    <a href="#" onclick="document.location.reload();"><img src="img/form-access.svg" alt=""></a>
+                    <a href="#" onclick="removeStyle('number-modal');"><img src="img/form-access.svg" alt=""></a>
                 </div>
             </div>
             <div class="support-modal">
@@ -271,9 +271,9 @@
                     <input id="support-button" type="submit" value="Отправить">
                 </form>
                 <div id="support-result" class="config-modal--access">
-                    <img src="img/close.svg" onclick="removeStyle('config-modal');" alt="">
+                    <img src="img/close.svg" onclick="removeStyle('support-modal');" alt="">
                     <p>Мы приняли вашу заявку!</p>
-                    <a href="#" onclick="document.location.reload();"><img src="img/form-access.svg" alt=""></a>
+                    <a href="#" onclick="removeStyle('support-modal');"><img src="img/form-access.svg" alt=""></a>
                 </div>
             </div>
             <div class="config-modal">
@@ -290,7 +290,7 @@
                 <div id="config-result" class="config-modal--access">
                     <img src="img/close.svg" onclick="removeStyle('config-modal');" alt="">
                     <p>Мы приняли вашу заявку!</p>
-                    <a href="#" onclick="document.location.reload();"><img src="img/form-access.svg" alt=""></a>
+                    <a href="#" onclick="removeStyle('config-modal');"><img src="img/form-access.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -306,6 +306,7 @@
         let mods = jQuery('.mods-carousel');
         mods.owlCarousel({ // init carousel
             items:3,
+            loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
             responsive: {

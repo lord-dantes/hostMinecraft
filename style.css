@@ -61,7 +61,7 @@ body{
     transition: all 300ms;
 }
 .home-call:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #35E1FF;
 }
 .home-call::before{

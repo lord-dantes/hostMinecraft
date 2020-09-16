@@ -63,7 +63,7 @@ const ramRange = {
 const rangeRAM = document.getElementById('rangeRAM'); // init rangeRAM
 let rangeRAMresult = document.getElementById('rangeRAM-result'); // init rangeRAMresult
 noUiSlider.create(rangeRAM, {
-    start: 0,
+    start: 1.8,
     snap: true,
     format: wNumb({
         decimals: 1,
@@ -206,7 +206,13 @@ function removeStyle(className){
         body[i].setAttribute("class", "");
         testClass[i].setAttribute("style", "display: none;");
     }
-    $('#config-number').val(' ');
+    $('#config-number').css({"filter": "unset"});
+    $('.config-modal__box > img').css({"filter": "unset"});
+    $('#config-number').val('');
+    $('#support-key').val('');
+    $('#support-message').val('');
+    $('#number-name').val('');
+    $('#number-phone').val('');
 }
 // if need help for this bad script, can write me telegram - @callbackme_bot
 // good luck!
