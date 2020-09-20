@@ -40,6 +40,19 @@
                             <li><a href="#">Billing</a></li>
                         </nav>
                         <a class="home-call" href="javascript:void(0);" onclick="addStyle('number-modal')">8(800)123-45-67</a>
+                        <div class="number-modal">
+                            <form id="number-form" action="/" method="POST" onsubmit="return false;">
+                                <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
+                                <input type="name" id="number-name" placeholder="Ваше имя">
+                                <input name="number-phone" type="number" id="number-phone" placeholder="Введите номер"></input>
+                                <input id="number-button" type="submit" value="Отправить">
+                            </form>
+                            <div id="number-result" class="config-modal--access">
+                                <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
+                                <p>Мы перезвоним!</p>
+                                <a href="#" onclick="removeStyle('number-modal');"><img src="img/form-access.svg" alt=""></a>
+                            </div>
+                        </div>
                     </header>
                     <div class="home-info__box">
                         <h1 class="home-title">Хостинг Майнкрафт</h1>
@@ -247,19 +260,6 @@
                 </div>
                 <p>©2020 <span>Global Host</span> Ltd. All Rights Reserved</p>
             </footer>
-            <div class="number-modal">
-                <form id="number-form" action="/" method="POST" onsubmit="return false;">
-                    <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
-                    <input type="name" id="number-name" placeholder="Ваше имя">
-                    <input name="number-phone" id="number-phone" placeholder="Введите номер"></input>
-                    <input id="number-button" type="submit" value="Отправить">
-                </form>
-                <div id="number-result" class="config-modal--access">
-                    <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
-                    <p>Мы перезвоним!</p>
-                    <a href="#" onclick="removeStyle('number-modal');"><img src="img/form-access.svg" alt=""></a>
-                </div>
-            </div>
             <div class="support-modal">
                 <form id="support-form" action="/" method="POST" onsubmit="return false;">
                     <img src="img/close.svg" onclick="removeStyle('support-modal');" alt="">
@@ -334,7 +334,7 @@
         $("#plan-href").click(function() {
             $('html, body').animate({
                 scrollTop: $('#plan').offset().top
-            }, 2000);
+            }, 1000);
         });
     // mask
     const element = document.getElementById('config-number');
@@ -352,6 +352,19 @@
             $('.config-modal__box > img').css({"filter": "brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(1100%) contrast(1)"});
         }
     };
+    const elementPhone = document.getElementById('number-phone');
+    var inputNumberPhone = elementPhone;
+    inputNumberPhone.oninput = function() {
+        if (inputNumberPhone.value.length > 12) {
+            inputNumberPhone.value = inputNumberPhone.value.slice(0, -1);
+            $('#number-phone').css({"filter": "unset"});
+        } else if(inputNumberPhone.value.length > 9){
+            $('#number-phone').css({"filter": "unset"});
+        } else if (inputNumberPhone.value.length < 9){
+            // $('#number-phone').css({"filter": "brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(1100%) contrast(1)"});
+            // $('#number-phone').css({"color":"black"});
+        }
+    };
     // form
     btn = jQuery('#contact-button');
     btn.click(function() {
@@ -364,9 +377,17 @@
         if (email == "") {
             inputEmail.css({"border": "1px solid #F30000"});
             inputMessage.css({"border": "1px solid #F30000"});
+            setTimeout(function(){
+                inputEmail.css({"border": "1px solid transparent"});
+                inputMessage.css({"border": "1px solid transparent"});
+            },1000);
         } else if (message == "") {
             inputEmail.css({"border": "1px solid transparent"});
             inputMessage.css({"border": "1px solid #F30000"});
+            setTimeout(function(){
+                inputEmail.css({"border": "1px solid transparent"});
+                inputMessage.css({"border": "1px solid transparent"});
+            },1000);
         } else if (email != "" && message != "") {
             inputEmail.css({"border": "1px solid transparent"});
             inputMessage.css({"border": "1px solid transparent"});
@@ -402,10 +423,20 @@
             inputKey.css({"color": "#C60303"});
             inputKey.val('Неверный номер');
             inputMessage.css({"color": "#000"});
+            setTimeout(function(){
+                inputKey.css({"color": "#000"});
+                inputKey.val('');
+                inputMessage.css({"color": "#000"});
+            },1000);
         } else if (message == "") {
             inputKey.css({"color": "#000"});
             inputMessage.val('Введите сообщение');
             inputMessage.css({"color": "#C60303"});
+            setTimeout(function(){
+                inputKey.css({"color": "#000"});
+                inputMessage.val('');
+                inputMessage.css({"color": "#000"});
+            },1000);
         } else if (key != "Неверный номер" && message != "Введите сообщение") {
             inputKey.css({"color": "#000"});
             inputMessage.css({"color": "#000"});
@@ -437,15 +468,26 @@
         var name = inputName.val();
         var phone = inputPhone.val();
         //
-        if (name == '') {
-            inputName.css({"color": "#C60303"});
-            inputName.val('Введите имя');
-            inputPhone.css({"color": "#000"});
-        } else if (phone == "") {
+        if (phone == "") {
             inputName.css({"color": "#000"});
+            inputPhone.attr({type:'text'});
             inputPhone.val('Введите номер');
             inputPhone.css({"color": "#C60303"});
-        } else if (name != "Введите имя" && phone != "Введите номер") {
+             setTimeout(function(){
+                inputPhone.css({"color": "#000"});
+                inputPhone.val('');
+                inputPhone.attr({type:'number'});
+            },1000);
+        } else if(phone.length < 10){
+            inputPhone.css({"color":"#C60303"});
+            inputPhone.attr({type:'text'});
+            inputPhone.val('Введите номер');
+            setTimeout(function(){
+                inputPhone.val('');
+                inputPhone.attr({type:'number'});
+                inputPhone.css({"color": "#000"});
+            },1000);
+        } else if (phone != "Введите номер" && phone.length > 9) {
             inputName.css({"color": "#000"});
             inputPhone.css({"color": "#000"});
             $.ajax({

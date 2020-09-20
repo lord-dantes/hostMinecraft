@@ -81,8 +81,10 @@ body{
     height: 20px;
     right: 0;
     top: 35px;
+    pointer-events: none;
 }
 header{
+    position: relative;
     padding: 0px 0px 0px 106px;
 }
 header{
@@ -137,7 +139,6 @@ header nav li a{
     letter-spacing: 0.7px;
     color: #FFFFFF;
     opacity: 0.8;
-    cursor: unset;
 }
 .home-title{
     font-family: 'Roboto';
@@ -160,6 +161,8 @@ header nav li a{
     color: #5787FF;
 }
 .home-info__box a{
+    position: relative;
+    z-index: 0;
     display: block;
     max-width: 138px;
     text-decoration: none;
@@ -958,6 +961,20 @@ footer > p span{
     background: #049943;
     border-radius: 4px;
     margin:0 auto 33px;
+    transition: all 300ms;
+}
+.config-modal a:hover, .number-modal a:hover{
+    background: #05E865;
+}
+#number-form #number-button{
+    transition: all 300ms;
+}
+#number-form #number-button:hover{
+    background: #05E865;
+    color: #fff;
+}
+.support-modal form input[type="submit"]{
+    transition: all 300ms;
 }
 .config-modal p{
     font-family: 'Open Sans';
@@ -992,6 +1009,9 @@ footer > p span{
     left: -10px;
     top: 5px;
     /*filter: brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(1100%) contrast(1);*/
+}
+.config-modal div img{
+    border:  0 !important;
 }
 .config-modal div img:hover{
     border: none;
@@ -1114,7 +1134,8 @@ footer > p span{
     border-radius: 7px;
 }
 .support-modal form input[type="submit"]:hover{
-    background: #049943;
+    background: #05E865;
+    color: #fff;
 }
 #support-key{
     margin-top: 0px;
@@ -1213,4 +1234,15 @@ footer > p span{
 }
 #number-result a img{
     position: static;
+    border:  0 !important;
+}
+.number-modal{
+    top: 100px;
+    position: absolute;
+    height: auto;
+    background: transparent;
+    left: 0;
+    margin-left: auto;
+    justify-content: flex-end;
+    right: 0;
 }
