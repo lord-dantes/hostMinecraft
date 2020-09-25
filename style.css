@@ -248,6 +248,7 @@ header nav li a{
     border: 1px solid #fff;
 }
 .features-items .features-item:nth-child(4) img{
+    width: 100%;
     margin:auto 0 auto;
 }
 .features-item{
@@ -628,9 +629,34 @@ header nav li a{
 .mods-title span{
     font-weight: bold;
 }
+.mods-carousel .item{
+    height: 201px;
+    width: 100%;
+    position: relative;
+    max-width: 358px;
+}
 .mods-carousel.owl-carousel .owl-item img{
-    width: auto;
+    width: 100%;
     height: 100%;
+}
+.mods-carousel.owl-carousel .owl-item p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 4px 0px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 225px;
+    height: 36px;
+    background: #10214A;
 }
 /*contact*/
 .contact__wrapper{
@@ -841,6 +867,7 @@ footer > p span{
     height: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 .support-modal form, .config-modal form, .number-modal form{
     background: #16074A;
@@ -1051,6 +1078,10 @@ footer > p span{
     height: 57px;
     background: #049943;
     border-radius: 4px;
+    transition: all 300ms;
+}
+.contact-form--access a:hover{
+    background: #05E865;
 }
 .config-modal--access{
     width: 537px;

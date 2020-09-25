@@ -35,11 +35,11 @@
                         </a>
                         <nav>
                             <li><a id="plan-href" href="#plan">Тарифы</a></li>
-                            <li><a href="#" onclick="addStyle('support-modal')">Support</a></li>
+                            <li><a href="#" onclick="addStyle('support-modal');refreshModal('support-form');">Support</a></li>
                             <li><a href="#">Panel</a></li>
                             <li><a href="#">Billing</a></li>
                         </nav>
-                        <a class="home-call" href="javascript:void(0);" onclick="addStyle('number-modal')">8(800)123-45-67</a>
+                        <a class="home-call" href="javascript:void(0);" onclick="addStyle('number-modal');refreshModal('number-form');">8(800)123-45-67</a>
                         <div class="number-modal">
                             <form id="number-form" action="/" method="POST" onsubmit="return false;">
                                 <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
@@ -57,7 +57,7 @@
                     <div class="home-info__box">
                         <h1 class="home-title">Хостинг Майнкрафт</h1>
                         <p>Играйте с друзьями <br> где бы вы ни были!</p>
-                        <a href="javascript:void(0);" onclick="addStyle('config-modal')">Начать</a>
+                        <a href="javascript:void(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Начать</a>
                     </div>
                 </div>
             </section>
@@ -85,7 +85,7 @@
                             <p>SSD-диски</p>
                         </div>
                         <div class="features-item">
-                            <img src="img/features-item4.svg" alt="">
+                            <img src="img/features-item4.jpg" alt="">
                             <p>Подержка BungeeCord</p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                 <p>Ограничена</p>
                                 <p>нет</p>
                                 <p>нет</p>
-                                <a href="javascript:voi(0);" onclick="addStyle('config-modal')">Выбрать</a>
+                                <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Выбрать</a>
                             </div>
                             <div class="plan-item">
                                 <p>150 ₽</p>
@@ -124,7 +124,7 @@
                                 <p>Email</p>
                                 <p>1 бэкап</p>
                                 <p>нет</p>
-                                <a href="javascript:voi(0);" onclick="addStyle('config-modal')">Выбрать</a>
+                                <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Выбрать</a>
                             </div>
                             <div class="plan-item">
                                 <p>280 ₽**</p>
@@ -134,7 +134,7 @@
                                 <p>Email</p>
                                 <p>1 бэкап</p>
                                 <p>да</p>
-                                <a href="javascript:voi(0);" onclick="addStyle('config-modal')">Выбрать</a>
+                                <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Выбрать</a>
                             </div>
                             <div class="plan-item">
                                 <p>430 ₽</p>
@@ -144,7 +144,7 @@
                                 <p>Email + телефон</p>
                                 <p>2 бэкапа</p>
                                 <p>да</p>
-                                <a href="javascript:voi(0);" onclick="addStyle('config-modal')">Выбрать</a>
+                                <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Выбрать</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                             <p>Цена = <span id="rangePrice-result">100</span> руб/мес</p>
                         </div>
                     </div>
-                    <a href="javascript:voi(0);" onclick="addStyle('config-modal')" class="config-link">Купить</a>
+                    <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');" class="config-link">Купить</a>
                 </div>
             </section>
             <section class="security__wrapper">
@@ -196,31 +196,40 @@
                     <div class="mods-title">Бесплатная установка <span>любых</span> модов</div>
                     <div class="mods-carousel owl-carousel">
                         <div class="item">
-                            <img src="img/mods/1.png" alt="">
+                            <img src="img/mods/IndustrialCraft21.jpg" alt="">
+                            <p>Industrial Craft 2</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/2.png" alt="">
+                            <img src="img/mods/OptiFine2.jpg" alt="">
+                            <p>OptiFine</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/3.png" alt="">
+                            <img src="img/mods/TwilightForest 3.jpg" alt="">
+                            <p>Twilight Forest</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/4.png" alt="">
+                            <img src="img/mods/ThaumCraft4.jpg" alt="">
+                            <p>Thaum Craft</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/5.png" alt="">
+                            <img src="img/mods/ComputerCraft5.jpg" alt="">
+                            <p>Computer Craft</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/6.png" alt="">
+                            <img src="img/mods/NotEnoughItems(NEI)6.jpg" alt="">
+                            <p>Not Enough Items(NEI)</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/7.png" alt="">
+                            <img src="img/mods/BiomesOPlenty7.jpg" alt="">
+                            <p>Biomes O' Plenty</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/8.png" alt="">
+                            <img src="img/mods/TinkersConstruct8.jpg" alt="">
+                            <p>Tinkers' Construct</p>
                         </div>
                         <div class="item">
-                            <img src="img/mods/9.png" alt="">
+                            <img src="img/mods/BiblioCraft9.jpg" alt="">
+                            <p>Biblio Craft</p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +257,7 @@
                     </form>
                     <div id="contact-result" class="contact-form--access">
                         <p>Мы получили ваше сообщение и скоро ответим!</p>
-                        <a href="#" onclick="document.location.reload();"><img src="img/form-access.svg" alt=""></a>
+                        <a href="#" onclick="refreshForm();"><img src="img/form-access.svg" alt=""></a>
                     </div>
                 </div>
             </section>
@@ -374,7 +383,8 @@
         var email = inputEmail.val();
         var message = inputMessage.val();
         //
-        if (email == "") {
+        // if (email == "") {
+        if (/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(email) != true) {
             inputEmail.css({"border": "1px solid #F30000"});
             inputMessage.css({"border": "1px solid #F30000"});
             setTimeout(function(){
@@ -404,7 +414,7 @@
                 success: function(result) {
                     const oldForm = jQuery('#contact-form');
                     const resultForm = jQuery('#contact-result');
-                    oldForm.css({"display":"none"});
+                    oldForm.css({"position":"absolute","opacity":"0","z-index":"-1"});
                     resultForm.css({"display": "flex"});
                 }
             });
@@ -419,7 +429,8 @@
         var key = inputKey.val();
         var message = inputMessage.val();
         //
-        if (/(?=.*7)(?=.*3)(?=.*5)/.test(key) != true) {
+        // if (/(?=.*7)(?=.*3)(?=.*5)/.test(key) != true) {
+        if (/(?=.*735)/.test(key) != true) {
             inputKey.css({"color": "#C60303"});
             inputKey.val('Неверный номер');
             inputMessage.css({"color": "#000"});
@@ -453,7 +464,8 @@
                 success: function(result) {
                     const oldForm = jQuery('#support-form');
                     const resultForm = jQuery('#support-result');
-                    oldForm.css({"display":"none"});
+                    // oldForm.css({"display":"none"});
+                    oldForm.css({"position":"absolute","opacity":"0","z-index":"-1"});
                     resultForm.css({"display": "flex"});
                 }
             });
@@ -503,7 +515,8 @@
                 success: function(result) {
                     const oldForm = jQuery('#number-form');
                     const resultForm = jQuery('#number-result');
-                    oldForm.css({"display":"none"});
+                    // oldForm.css({"display":"none"});
+                    oldForm.css({"position":"absolute","opacity":"0","z-index":"-1"});
                     resultForm.css({"display": "flex"});
                 }
             });
@@ -532,7 +545,8 @@
                 success: function(result) {
                     const oldForm = jQuery('#config-form');
                     const resultForm = jQuery('#config-result');
-                    oldForm.css({"display":"none"});
+                    // oldForm.css({"display":"none"});
+                    oldForm.css({"position":"absolute","opacity":"0","z-index":"-1"});
                     resultForm.css({"display": "flex"});
                 }
             });

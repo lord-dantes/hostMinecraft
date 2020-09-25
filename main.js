@@ -199,6 +199,10 @@ function addStyle(className){
         testClass[i].setAttribute("style", "display:flex;");
     }
 }
+function refreshModal(element){
+    let testElement = document.getElementById(element);
+    testElement.setAttribute("style", "opacity:1;z-index:1;display:flex;");
+}
 function removeStyle(className){
     let testClass = document.getElementsByClassName(className);
     let body = document.getElementsByTagName('body');
@@ -206,6 +210,7 @@ function removeStyle(className){
         body[i].setAttribute("class", "");
         testClass[i].setAttribute("style", "display: none;");
     }
+    $('#config-result,#support-result,#number-result,#contact-result').hide();
     $('#config-number').css({"filter": "unset"});
     $('.config-modal__box > img').css({"filter": "unset"});
     $('#config-number').val('');
@@ -213,6 +218,12 @@ function removeStyle(className){
     $('#support-message').val('');
     $('#number-name').val('');
     $('#number-phone').val('');
+}
+function refreshForm(){
+    $('#contact-form').css({"position":"static","opacity":"1","z-index":"1"});
+    $('#contact-form input#email').val('');
+    $('#contact-form textarea').val('');
+    $('#contact-result').hide();
 }
 // if need help for this bad script, can write me telegram - @callbackme_bot
 // good luck!
