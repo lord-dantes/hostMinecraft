@@ -267,6 +267,14 @@ function LinkRange(){
    const configValue = document.getElementById('config-value');
    configValue.setAttribute("href", actualLink);
 }
+// 
+function configLink(id){
+   const el = document.getElementById(id);
+   const configHref = el.getAttribute("data-href");
+   
+   const configValue = document.getElementById('config-value');
+   configValue.setAttribute("href", configHref);
+}
 //
 function addStyle(className){
     let testClass = document.getElementsByClassName(className);
