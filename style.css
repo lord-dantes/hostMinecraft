@@ -197,8 +197,10 @@ header nav li a{
     background: #0D003E;
     padding:63px 0px 80px;
 }
-.video__wrapper iframe{
+.video__wrapper iframe, .video__wrapper div{
     display: block;
+    background: url("img/globalhost-preview.png");
+    background-size: cover;
     width: 938.67px;
     margin:0 auto;
     height: 528px;
