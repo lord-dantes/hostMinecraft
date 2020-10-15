@@ -6,7 +6,7 @@
 		echo "Заполните все поля";
     }
 	else{
-		$it = 'it737@yandex.ru';
+		$it = 'support@globalhost.top';
         $to = $it;
 
 		$subject = "[Minecraft Hosting Support] " . $key;

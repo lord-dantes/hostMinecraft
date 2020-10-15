@@ -6,13 +6,13 @@
 		echo "Заполните все поля";
     }
 	else{
-		$it = 'it737@yandex.ru';
-        $to = $it;
+		$it = 'info@globalhost.top';
+    $to = $it;
 
 		$subject = "[Minecraft Hosting] " . $email;
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers .= "Content-type: text/html; charset=utf-8\r\n";
-		$headers .= "From: <manager@domen.com>\r\n";
+		$headers .= "From: <manager@globalhost.top>\r\n";
 
 		$message .=
 		"Почта: " . $email . "<br>".

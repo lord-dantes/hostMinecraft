@@ -190,6 +190,83 @@ function PriceRange(){
         priceBlock.textContent = priceRange[newidx]; // take with index, need count
     }
 }
+function LinkRange(){
+   const priceRange = [
+        100,
+        110,
+        120,
+        140,
+        150,
+        190,
+        230,
+        280,
+        310,
+        350,
+        390,
+        430,
+        470,
+        510,
+        550,
+        590,
+        630,
+        670,
+        710,
+        750,
+        790,
+        830,
+        890,
+        950,
+        1000,
+        1050,
+        1100,
+        1150,
+        1200,1260,1320,1370,1420
+    ];
+   const actualPrice = document.getElementById('rangePrice-result').textContent;
+ 
+   const linkRange = [
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D1%26project%3D1',
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D21%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D26%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D31%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D6%26project%3D1',                          
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D36%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D41%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D11%26project%3D1',
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D46%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D51%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D56%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D16%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D61%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D66%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D71%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D76%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D81%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D86%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D101%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D111%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D116%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D126%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D136%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D141%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D151%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D161%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D156%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D146%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D131%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D121%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D106%26project%3D1',                                    
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D96%26project%3D1',                                 
+    'https://hosting.globalhost.top/billmgr?func=register&redirect=startpage%3Dminecraft%26startform%3Dminecraft%252Eorder%26pricelist%3D91%26project%3D1'                      
+  ];
+   const linkBlock = document.getElementById('linkText');
+    
+   const idxLink = priceRange.indexOf(parseInt(actualPrice));
+   const actualLink = linkRange[idxLink];
+
+   const configValue = document.getElementById('config-value');
+   configValue.setAttribute("href", actualLink);
+}
 //
 function addStyle(className){
     let testClass = document.getElementsByClassName(className);
@@ -218,6 +295,9 @@ function removeStyle(className){
     $('#support-message').val('');
     $('#number-name').val('');
     $('#number-phone').val('');
+    // 
+    const configValue = document.getElementById('config-value');
+    configValue.setAttribute("href", 'https://hosting.globalhost.top/billmgr');
 }
 function refreshForm(){
     $('#contact-form').css({"position":"static","opacity":"1","z-index":"1"});

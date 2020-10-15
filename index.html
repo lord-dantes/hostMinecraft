@@ -39,7 +39,7 @@
                             <li><a href="#">Panel</a></li>
                             <li><a href="#">Billing</a></li>
                         </nav>
-                        <a class="home-call" href="javascript:void(0);" onclick="addStyle('number-modal');refreshModal('number-form');">8(800)123-45-67</a>
+                        <a class="home-call" href="javascript:void(0);" onclick="addStyle('number-modal');refreshModal('number-form');">8 (495) 118-40-24</a>
                         <div class="number-modal">
                             <form id="number-form" action="/" method="POST" onsubmit="return false;">
                                 <img src="img/close.svg" onclick="removeStyle('number-modal');" alt="">
@@ -107,10 +107,10 @@
                                 <p>Поддержка BungeeCord</p>
                             </div>
                             <div class="plan-item">
-                                <p>Бесплатно*</p>
+                                <p>100 руб</p>
                                 <p>Basic</p>
-                                <p>2 Gb</p>
-                                <p>1 Gb</p>
+                                <p>5 Gb</p>
+                                <p>1.1 Gb</p>
                                 <p>Ограничена</p>
                                 <p>нет</p>
                                 <p>нет</p>
@@ -127,7 +127,7 @@
                                 <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');">Выбрать</a>
                             </div>
                             <div class="plan-item">
-                                <p>280 ₽**</p>
+                                <p>280 ₽*</p>
                                 <p>Gold</p>
                                 <p>10 Gb</p>
                                 <p>3 Gb</p>
@@ -168,11 +168,11 @@
                         </div>
                         <div class="range-result">
                             <p>SSD = <span id="rangeSSD-result">5</span> GB</p>
-                            <p>RAM = <span id="rangeRAM-result">1.1</span> MB</p>
+                            <p>RAM = <span id="rangeRAM-result">1.1</span> GB</p>
                             <p>Цена = <span id="rangePrice-result">100</span> руб/мес</p>
                         </div>
                     </div>
-                    <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');" class="config-link">Купить</a>
+                    <a href="javascript:voi(0);" onclick="addStyle('config-modal');refreshModal('config-form');LinkRange();" class="config-link">Купить</a>
                 </div>
             </section>
             <section class="security__wrapper">
@@ -264,7 +264,7 @@
             <footer>
                 <div class="footer-info">
                     <p>Наши контакты</p>
-                    <p>8(800)234-56-78</p>
+                    <p>8 (495) 118-40-24</p>
                     <a href="mailto:info@globalhost.top">info@globalhost.top</a>
                 </div>
                 <p>©2020 <span>Global Host</span> Ltd. All Rights Reserved</p>
@@ -288,8 +288,8 @@
             <div class="config-modal">
                 <form id="config-form" action="/" method="POST" onsubmit="return false;">
                     <img src="img/close.svg" onclick="removeStyle('config-modal');" alt="">
-                    <a href="javascript:void(0);">Перейти в биллинг</a>
-                    <p>Если нужна помощь для оплаты и регистрации, позвоните нам по бесплатному номеру <span>8(800)234-15-02</span> или оставьте ваш номер и мы перезвоним.</p>
+                    <a id="config-value" href="https://hosting.globalhost.top/billmgr">Перейти в биллинг</a>
+                    <p>Если нужна помощь для оплаты и регистрации, позвоните нам по номеру <span>8 (495) 118-40-24</span> или оставьте ваш номер и мы перезвоним.</p>
                     <div class="config-modal__box">
                         <img src="img/phone.svg" alt="">
                         <input type="number" id="config-number">
